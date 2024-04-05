@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="registrationFormOneVM" type="com.amirsohelsapplication.app.modules.registrationformone.data.viewmodel.RegistrationFormOneVM"/>
+    </data>
+
+
+
+    <FrameLayout
+        android:id="@+id/frameRegistrationForm"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        style="@style/groupStylewhite_A700">
+
+        <ImageView
+            android:id="@+id/imageImage"
+            android:layout_gravity="center"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:scaleType="fitXY"
+            imageRes="@{@drawable/img_rectangle}"
+            tools:ignore="ContentDescription"
+            tools:src="@drawable/img_rectangle"/>
+
+        <LinearLayout
+            android:id="@+id/linearColumnhowtocont"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/_60pxv"
+            android:paddingEnd="@dimen/_12pxh"
+            android:paddingStart="@dimen/_12pxh"
+            android:paddingTop="@dimen/_60pxv">
+
+            <ProgressBar
+                android:gravity="center_horizontal"
+                android:id="@+id/progressBarProgressbar"
+                android:indeterminate="false"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_8pxh"
+                android:layout_marginStart="@dimen/_8pxh"
+                android:layout_marginTop="@dimen/_4pxv"
+                android:layout_width="match_parent"
+                android:max="100"
+                android:minHeight="@dimen/_11pxv"
+                android:progress="33"
+                android:progressDrawable="@drawable/layer_list_bg_white_a700_radius_5"
+                style="@style/Widget.AppCompat.ProgressBar.Horizontal"/>
+
+            <TextView
+                android:ellipsize="end"
+                android:id="@+id/txtThirteen"
+                android:layout_gravity="end"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_8pxh"
+                android:layout_marginTop="@dimen/_4pxv"
+                android:layout_width="wrap_content"
+                android:singleLine="true"
+                android:text="@string/lbl_1_3"
+                style="@style/txtJostromanregular14"
+                tools:text="@string/lbl_1_3"/>
+
+            <TextView
+                android:ellipsize="end"
+                android:id="@+id/txtHowtocontact"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_26pxv"
+                android:layout_width="wrap_content"
+                android:singleLine="true"
+                android:text="@string/msg_how_to_contact_you"
+                style="@style/txtDMSerifDisplayregular20"
+                tools:text="@string/msg_how_to_contact_you"/>
+
+            <ImageView
+                android:id="@+id/imageAvataruser120"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="@dimen/_120pxh"
+                android:layout_marginTop="@dimen/_26pxv"
+                android:layout_width="@dimen/_120pxh"
+                android:scaleType="centerCrop"
+                android:src="@drawable/user"
+                tools:ignore="ContentDescription"
+                tools:src="@drawable/user"/>
+
+            <FrameLayout
+                android:id="@+id/frameStackuploadprof"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="@dimen/_36pxv"
+                android:layout_marginTop="@dimen/_14pxv"
+                android:layout_width="@dimen/_131pxh">
+
+                <ImageView
+                    android:id="@+id/imageImageOne"
+                    android:layout_gravity="center"
+                    android:layout_height="@dimen/_36pxh"
+                    android:layout_width="@dimen/_131pxh"
+                    android:scaleType="fitXY"
+                    cornerRadius="@{@dimen/_10pxh}"
+                    imageRes="@{@drawable/img_rectangle_6678}"
+                    tools:ignore="ContentDescription"
+                    tools:src="@drawable/img_rectangle_6678"/>
+
+                <TextView
+                    android:ellipsize="end"
+                    android:gravity="center_horizontal"
+                    android:id="@+id/txtUploadprofile"
+                    android:layout_gravity="bottom|center"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_6pxv"
+                    android:layout_width="match_parent"
+                    android:singleLine="true"
+                    android:text="@string/lbl_upload_profile"
+                    style="@style/txtJostromanregular14_1"
+                    tools:text="@string/lbl_upload_profile"/>
+
+            </FrameLayout>
+
+
+            <ScrollView
+                android:fillViewport="true"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+            <com.google.android.material.textfield.TextInputLayout
+                android:hint="@string/lbl_name"
+                android:id="@+id/textInputLayName"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_8pxh"
+                android:layout_marginTop="@dimen/_20pxv"
+                android:layout_width="match_parent"
+                android:paddingBottom="@dimen/_11pxv"
+                android:paddingEnd="@dimen/_28pxh"
+                android:paddingStart="@dimen/_28pxh"
+                android:paddingTop="@dimen/_11pxv"
+                android:textColorHint="@color/gray_700" style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:ellipsize="end"
+                    android:fontFamily="@font/jost"
+                    android:id="@+id/etName" android:inputType="text"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:singleLine="true"
+                    android:text="@={registrationFormOneVM.registrationFormOneModel.etNameValue}"
+                    android:textColor="@color/gray_500"
+                    android:textFontWeight="400"
+                    android:textSize="@dimen/_20pxh"
+                    android:textStyle="normal"
+                    tools:text="@string/lbl_name"/>
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:hint="@string/lbl_mobile"
+                android:id="@+id/textInputLayMobilevalue"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_8pxh"
+                android:layout_marginTop="@dimen/_23pxv"
+                android:layout_width="match_parent"
+                android:paddingBottom="@dimen/_11pxv"
+                android:paddingEnd="@dimen/_28pxh"
+                android:paddingStart="@dimen/_28pxh"
+                android:paddingTop="@dimen/_22pxv"
+                android:textColorHint="@color/gray_700" style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:ellipsize="end"
+                    android:fontFamily="@font/jost"
+                    android:id="@+id/etMobilevalue"
+                    android:inputType="text"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:singleLine="true"
+                    android:textColor="@color/gray_800_01"
+                    android:textFontWeight="400"
+                    android:textSize="@dimen/_20pxh"
+                    android:textStyle="normal"
+                    tools:text="@string/lbl_988080_8"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:hint="@string/lbl_email"
+                android:id="@+id/textInputLayEmail"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_8pxh"
+                android:layout_marginTop="@dimen/_23pxv"
+                android:layout_width="match_parent"
+                android:paddingBottom="@dimen/_10pxv"
+                android:paddingEnd="@dimen/_28pxh"
+                android:paddingStart="@dimen/_28pxh"
+                android:paddingTop="@dimen/_13pxv"
+                android:textColorHint="@color/gray_700" style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:ellipsize="end"
+                    android:fontFamily="@font/jost"
+                    android:id="@+id/etEmail" android:inputType="text"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:singleLine="true"
+                    android:text="@={registrationFormOneVM.registrationFormOneModel.etEmailValue}"
+                    android:textColor="@color/gray_500"
+                    android:textFontWeight="400"
+                    android:textSize="@dimen/_20pxh"
+                    android:textStyle="normal"
+                    tools:text="@string/lbl_yourgmail_com"/>
+            </com.google.android.material.textfield.TextInputLayout>
+            <androidx.appcompat.widget.AppCompatButton
+                android:ellipsize="end" android:gravity="center"
+                android:id="@+id/btnNext"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_8pxh"
+                android:layout_marginStart="@dimen/_8pxh"
+                android:layout_marginTop="@dimen/_70pxv"
+                android:layout_width="match_parent"
+                android:paddingBottom="@dimen/_21pxv"
+                android:paddingEnd="@dimen/_30pxh"
+                android:paddingStart="@dimen/_30pxh"
+                android:paddingTop="@dimen/_21pxv"
+                android:singleLine="true"
+                android:text="@string/lbl_next"
+                android:textAllCaps="false"
+                style="@style/btnSolidRounded"
+                tools:text="@string/lbl_next"/>
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+    </FrameLayout>
+
+
+
+</layout>

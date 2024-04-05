@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="registrationFormTwoVM" type="com.amirsohelsapplication.app.modules.registrationfrom2.data.viewmodel.RegistrationFormTwoVM"/>
+    </data>
+    <FrameLayout android:id="@+id/frameRegistrationForm"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent" style="@style/groupStylewhite_A700">
+        <ImageView android:id="@+id/imageImage"
+            android:layout_gravity="center"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:scaleType="fitXY"
+            imageRes="@{@drawable/img_rectangle_800x360}"
+            tools:ignore="ContentDescription" tools:src="@drawable/img_rectangle_800x360"/>
+        <LinearLayout android:id="@+id/linearColumnaboutyou"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/_60pxv"
+            android:paddingEnd="@dimen/_20pxh"
+            android:paddingStart="@dimen/_20pxh" android:paddingTop="@dimen/_60pxv">
+            <ProgressBar android:gravity="center_horizontal"
+                android:id="@+id/progressBarProgressbar"
+                android:indeterminate="false"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_4pxv"
+                android:layout_width="match_parent" android:max="100"
+                android:minHeight="@dimen/_11pxv" android:progress="72"
+                android:progressDrawable="@drawable/layer_list_bg_white_a700_radius_5" style="@style/Widget.AppCompat.ProgressBar.Horizontal"/>
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtTwentyThree"
+                android:layout_gravity="end"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_4pxv"
+                android:layout_width="wrap_content"
+                android:singleLine="true"
+                android:text="@string/lbl_2_3"
+                style="@style/txtJostromanregular14"
+                tools:text="@string/lbl_2_3"/>
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtAboutyou"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_26pxv"
+                android:layout_width="wrap_content"
+                android:singleLine="true"
+                android:text="@string/lbl_about_you"
+                style="@style/txtDMSerifDisplayregular20"
+                tools:text="@string/lbl_about_you"/>
+
+            <ScrollView
+                android:fillViewport="true"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/layout"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:hint="@string/lbl_age"
+                android:id="@+id/textInputLayAgevalue1"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10pxv"
+                android:layout_width="match_parent"
+                android:paddingBottom="@dimen/_11pxv"
+                android:paddingEnd="@dimen/_28pxh"
+                android:paddingStart="@dimen/_28pxh"
+                android:paddingTop="@dimen/_11pxv"
+                android:textColorHint="@color/gray_700"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:background="@drawable/layer_list_border_gray_900_02_radius_10"
+                android:gravity="center_horizontal"
+                android:id="@+id/spinnerChoose"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_23pxv"
+                android:layout_width="match_parent"
+                tools:listitem="@layout/spinner_item"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:hint="@string/lbl_age"
+                android:id="@+id/textInputLayAgevalue"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10pxv"
+                android:layout_width="match_parent"
+                android:paddingBottom="@dimen/_11pxv"
+                android:paddingEnd="@dimen/_28pxh"
+                android:paddingStart="@dimen/_28pxh"
+                android:paddingTop="@dimen/_11pxv"
+                android:textColorHint="@color/gray_700"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:ellipsize="end"
+                    android:fontFamily="@font/jost"
+                    android:id="@+id/etAgevalue"
+                    android:inputType="text"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:singleLine="true"
+                    android:text="@={registrationFormTwoVM.registrationFormTwoModel.etAgevalueValue}"
+                    android:textColor="@color/gray_500"
+                    android:textFontWeight="400"
+                    android:textSize="@dimen/_20pxh"
+                    android:textStyle="normal"
+                    tools:text="@string/lbl_00"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:hint="@string/lbl_height"
+                android:id="@+id/textInputLayWeightvalue"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10pxv"
+                android:layout_width="match_parent"
+                android:paddingBottom="@dimen/_11pxv"
+                android:paddingEnd="@dimen/_28pxh"
+                android:paddingStart="@dimen/_28pxh"
+                android:paddingTop="@dimen/_11pxv"
+                android:textColorHint="@color/gray_700"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:ellipsize="end"
+                    android:fontFamily="@font/jost"
+                    android:id="@+id/etWeightvalue"
+                    android:inputType="text"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:singleLine="true"
+                    android:text="@={registrationFormTwoVM.registrationFormTwoModel.etWeightvalueValue}"
+                    android:textColor="@color/gray_500"
+                    android:textFontWeight="400"
+                    android:textSize="@dimen/_20pxh"
+                    android:textStyle="normal"
+                    tools:text="@string/lbl_00"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:hint="@string/lbl_weight"
+                android:id="@+id/textInputLayWeightvalueOne"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10pxv"
+                android:layout_width="match_parent"
+                android:paddingBottom="@dimen/_11pxv"
+                android:paddingEnd="@dimen/_28pxh"
+                android:paddingStart="@dimen/_28pxh"
+                android:paddingTop="@dimen/_11pxv"
+                android:textColorHint="@color/gray_700"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:ellipsize="end"
+                    android:fontFamily="@font/jost"
+                    android:id="@+id/etWeightvalueOne"
+                    android:inputType="text"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:singleLine="true"
+                    android:text="@={registrationFormTwoVM.registrationFormTwoModel.etWeightvalueOneValue}"
+                    android:textColor="@color/gray_500"
+                    android:textFontWeight="400"
+                    android:textSize="@dimen/_20pxh"
+                    android:textStyle="normal"
+                    tools:text="@string/lbl_00"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:hint="@string/lbl_profession"
+                android:id="@+id/textInputLayProfessionvalue"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10pxv"
+                android:layout_width="match_parent"
+                android:paddingBottom="@dimen/_9pxv"
+                android:paddingEnd="@dimen/_28pxh"
+                android:paddingStart="@dimen/_28pxh"
+                android:paddingTop="@dimen/_13pxv"
+                android:textColorHint="@color/gray_700"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:ellipsize="end"
+                    android:fontFamily="@font/jost"
+                    android:id="@+id/etProfessionvalue"
+                    android:inputType="text"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:singleLine="true"
+                    android:text="@={registrationFormTwoVM.registrationFormTwoModel.etProfessionvalueValue}"
+                    android:textColor="@color/gray_500"
+                    android:textFontWeight="400"
+                    android:textSize="@dimen/_20pxh"
+                    android:textStyle="normal"
+                    tools:text="@string/lbl_type"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:hint="@string/lbl_age"
+                    android:id="@+id/textInputLayAgevalue11"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10pxv"
+                    android:layout_width="match_parent"
+                    android:paddingBottom="@dimen/_11pxv"
+                    android:paddingEnd="@dimen/_28pxh"
+                    android:paddingStart="@dimen/_28pxh"
+                    android:paddingTop="@dimen/_11pxv"
+                    android:textColorHint="@color/gray_700"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:background="@drawable/layer_list_border_gray_900_02_radius_10"
+                android:gravity="center_horizontal"
+                android:id="@+id/spinnerChooseOne"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10pxv"
+                android:layout_width="match_parent"
+                tools:listitem="@layout/spinner_item"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+            <androidx.appcompat.widget.AppCompatButton
+                android:ellipsize="end" android:gravity="center"
+                android:id="@+id/btnNext"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_78pxv"
+                android:layout_width="match_parent"
+                android:paddingBottom="@dimen/_21pxv"
+                android:paddingEnd="@dimen/_30pxh"
+                android:paddingStart="@dimen/_30pxh"
+                android:paddingTop="@dimen/_21pxv"
+                android:singleLine="true"
+                android:text="@string/lbl_next"
+                android:textAllCaps="false"
+                style="@style/btnSolidRounded" tools:text="@string/lbl_next"/>
+            </LinearLayout>
+
+            </ScrollView>
+        </LinearLayout>
+    </FrameLayout>
+</layout>

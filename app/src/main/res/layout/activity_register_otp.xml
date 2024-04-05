@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="loginOtpVM" type="com.amirsohelsapplication.app.modules.loginotp.data.viewmodel.LoginOtpVM"/>
+    </data>
+    <FrameLayout
+        android:id="@+id/frameLoginOTP"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        style="@style/groupStylewhite_A700">
+
+        <ImageView
+            android:id="@+id/imageImage"
+            android:layout_gravity="center"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:scaleType="fitXY"
+            android:src="@drawable/img_rectangle_800x360"
+            imageRes="@{@drawable/img_rectangle_800x360}"
+            tools:ignore="ContentDescription"
+            tools:src="@drawable/img_rectangle_800x360"/>
+
+        <FrameLayout
+            android:id="@+id/frameStackarrowdown"
+            android:layout_gravity="center"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent">
+
+            <ImageView
+                android:id="@+id/imageImageOne"
+                android:layout_gravity="top|center"
+                android:layout_height="@dimen/_501pxv"
+                android:layout_width="match_parent"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_rectangle_43_501x360"
+                cornerRadius="@{@dimen/_30pxh}"
+                imageRes="@{@drawable/img_rectangle_43_501x360}"
+                tools:ignore="ContentDescription"
+                tools:src="@drawable/img_rectangle_43_501x360"/>
+
+            <LinearLayout
+                android:id="@+id/linearColumnarrowdown"
+                android:layout_gravity="top|center"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_19pxh"
+                android:layout_marginStart="@dimen/_19pxh"
+                android:layout_marginTop="@dimen/_39pxv"
+                android:layout_width="match_parent"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.Toolbar
+                    android:id="@+id/toolbarToolbar"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    app:contentInsetStart="0dp">
+
+                    <ImageButton
+                        android:background="@drawable/rectangle_bg_white_a700_radius_10"
+                        android:id="@+id/btnArrowdownOne"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_302pxh"
+                        android:layout_marginStart="@dimen/_20pxh"
+                        android:layout_width="match_parent"
+                        android:paddingHorizontal="@dimen/_12pxh"
+                        android:paddingVertical="@dimen/_12pxv"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/img_arrow_down"
+                        tools:ignore="ContentDescription"/>
+
+                </androidx.appcompat.widget.Toolbar>
+
+                <TextView
+                    android:ellipsize="end"
+                    android:id="@+id/txtEnterotp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_1pxh"
+                    android:layout_marginTop="@dimen/_48pxv"
+                    android:layout_width="wrap_content"
+                    android:singleLine="true"
+                    android:text="@string/lbl_enter_otp"
+                    style="@style/txtDMSerifDisplayregular20"
+                    tools:text="@string/lbl_enter_otp"/>
+
+                <TextView
+                    android:ellipsize="end"
+                    android:id="@+id/txtOtphasbesent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10pxv"
+                    android:layout_width="match_parent"
+                    android:singleLine="true"
+                    android:text="@string/msg_otp_has_be_sent"
+                    style="@style/txtRalewayromanmedium10"
+                    tools:text="@string/msg_otp_has_be_sent"/>
+
+                <com.mukesh.OtpView
+                    android:focusableInTouchMode="true"
+                    android:id="@+id/otpViewOtpview"
+                    android:inputType="number"
+                    android:itemBackground="@color/white_A700"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_26pxh"
+                    android:layout_marginStart="@dimen/_1pxh"
+                    android:layout_marginTop="@dimen/_13pxv"
+                    android:layout_width="wrap_content"
+                    app:OtpItemCount="4"
+                    android:gravity="center"
+                    app:OtpItemHeight="@dimen/_55pxv"
+                    app:OtpItemSpacing="@dimen/_16pxh"
+                    app:OtpItemWidth="@dimen/_61pxh"
+                    app:OtpLineColor="@color/blue_gray_400"
+                    app:OtpViewType="rectangle"/>
+
+                <LinearLayout
+                    android:id="@+id/linearRowdidntreceive"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_1pxh"
+                    android:layout_marginTop="@dimen/_19pxv"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:ellipsize="end"
+                        android:gravity="top"
+                        android:id="@+id/txtDidntreceive"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:singleLine="true"
+                        android:text="@string/msg_didn_t_receive_otp"
+                        style="@style/txtJostromanregular14"
+                        tools:text="@string/msg_didn_t_receive_otp"/>
+
+                    <TextView
+                        android:ellipsize="end"
+                        android:id="@+id/txtResendcode"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="end"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_86pxh"
+                        android:layout_width="wrap_content"
+                        android:singleLine="true"
+                        android:text="@string/lbl_resend_code"
+                        style="@style/txtJostromanmedium14"
+                        textUnderline="true"
+                        tools:text="@string/lbl_resend_code"/>
+
+                </LinearLayout>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:ellipsize="end" android:gravity="center"
+                    android:id="@+id/btnSubmit"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_1pxh"
+                    android:layout_marginTop="@dimen/_42pxv"
+                    android:layout_width="match_parent"
+                    android:paddingBottom="@dimen/_21pxv"
+                    android:paddingEnd="@dimen/_30pxh"
+                    android:paddingStart="@dimen/_30pxh"
+                    android:paddingTop="@dimen/_21pxv"
+                    android:singleLine="true"
+                    android:text="@string/lbl_submit"
+                    android:textAllCaps="false"
+                    style="@style/btnSolidRounded"
+                    tools:text="@string/lbl_submit"/>
+
+            </LinearLayout>
+        </FrameLayout>
+    </FrameLayout>
+</layout>
