@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="viewhierarchyRowModel" type="com.curevivepatient.app.modules.homeactivity.data.model.ViewhierarchyRowModel"/>
+    </data>
+    <FrameLayout android:id="@+id/frameViewhierarchy"
+        android:layout_height="wrap_content"
+        android:layout_width="@dimen/_299pxh"
+        android:paddingBottom="@dimen/_7pxv"
+        android:paddingEnd="@dimen/_8pxh"
+        android:paddingStart="@dimen/_8pxh"
+        android:paddingTop="@dimen/_7pxv"
+        style="@style/groupStylewhite_A700_b5cornerRadius">
+        <LinearLayout android:id="@+id/linearColumnmeditatio"
+            android:layout_gravity="bottom|end"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_43pxv"
+            android:layout_marginEnd="@dimen/_56pxh"
+            android:layout_marginStart="@dimen/_130pxh"
+            android:layout_width="match_parent" android:orientation="vertical">
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtMeditationText"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:singleLine="true"
+                android:text="@string/lbl_meditation"
+                style="@style/txtRadleyitalic14"
+                tools:text="@string/lbl_meditation"/>
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtWebinarText"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_4pxv"
+                android:layout_width="match_parent"
+                android:singleLine="true"
+                android:text="@string/lbl_webinar"
+                style="@style/txtRadleyitalic14"
+                tools:text="@string/lbl_webinar"/>
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtAromaTherapyTex"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_4pxv"
+                android:layout_width="match_parent"
+                android:singleLine="true"
+                android:text="@string/lbl_aroma_therapy"
+                style="@style/txtRadleyitalic14"
+                tools:text="@string/lbl_aroma_therapy"/>
+        </LinearLayout>
+        <TextView android:ellipsize="end"
+            android:id="@+id/txtWorkshopText"
+            android:layout_gravity="bottom|end"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_1pxv"
+            android:layout_marginEnd="@dimen/_78pxh"
+            android:layout_width="wrap_content"
+            android:singleLine="true"
+            android:text="@string/lbl_8_days_workshop"
+            style="@style/txtRadleyregular10"
+            tools:text="@string/lbl_8_days_workshop"/>
+
+        <TextView
+            android:ellipsize="end" android:id="@+id/txtDateText"
+            android:layout_gravity="bottom|end"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_14pxv"
+            android:layout_marginEnd="@dimen/_87pxh"
+            android:layout_width="wrap_content"
+            android:singleLine="true"
+            android:text="@string/lbl_18_26_feb"
+            style="@style/txtRubikromanregular12"
+            tools:text="@string/lbl_18_26_feb"/>
+
+        <TextView
+            android:ellipsize="end"
+            android:id="@+id/txtJoin"
+            android:layout_gravity="bottom|end"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_2pxv"
+            android:layout_width="wrap_content"
+            android:paddingBottom="@dimen/_5pxv"
+            android:paddingEnd="@dimen/_22pxh"
+            android:paddingStart="@dimen/_22pxh"
+            android:paddingTop="@dimen/_5pxv" android:singleLine="true"
+            android:text="@string/lbl_join"
+            style="@style/txtSolidRounded"
+            tools:text="@string/lbl_join"/>
+
+        <LinearLayout android:id="@+id/linearRowbeginnersyog"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent" android:orientation="horizontal">
+            <ImageView android:id="@+id/imageMeditationImage"
+                android:layout_height="@dimen/_165pxh"
+                android:layout_width="@dimen/_118pxh"
+                android:scaleType="fitXY" cornerRadius="@{@dimen/_5pxh}"
+                imageRes="@{@drawable/img_rectangle_6602}"
+                tools:ignore="ContentDescription"
+                tools:src="@drawable/img_rectangle_6602"/>
+            <LinearLayout android:id="@+id/linearColumnbeginners"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_109pxv"
+                android:layout_marginStart="@dimen/_11pxh"
+                android:layout_width="wrap_content" android:orientation="vertical">
+                <TextView android:ellipsize="end"
+                    android:gravity="center_horizontal"
+                    android:id="@+id/txtBeginnersYogaTe"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:singleLine="true"
+                    android:text="@string/msg_beginners_yoga_program"
+                    style="@style/txtRadleyregular14"
+                    tools:text="@string/msg_beginners_yoga_program"/>
+                <TextView android:ellipsize="end"
+                    android:gravity="center_horizontal"
+                    android:id="@+id/txtStepTowardsText"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:singleLine="true"
+                    android:text="@string/msg_step_towards_flexible"
+                    style="@style/txtRadleyregular10_1"
+                    tools:text="@string/msg_step_towards_flexible"/>
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtYogaText"
+                    android:layout_gravity="start"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_6pxv"
+                    android:layout_width="wrap_content"
+                    android:singleLine="true"
+                    android:text="@string/lbl_yoga"
+                    style="@style/txtRadleyitalic14"
+                    tools:text="@string/lbl_yoga"/>
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+</layout>

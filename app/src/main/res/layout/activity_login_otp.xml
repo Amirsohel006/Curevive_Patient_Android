@@ -2,7 +2,7 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
     <data>
-        <variable name="loginOtpVM" type="com.amirsohelsapplication.app.modules.loginotp.data.viewmodel.LoginOtpVM"/>
+        <variable name="loginOtpVM" type="com.curevivepatient.app.modules.loginotp.data.viewmodel.LoginOtpVM"/>
     </data>
     <FrameLayout
         android:id="@+id/frameLoginOTP"

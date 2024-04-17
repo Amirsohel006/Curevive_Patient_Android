@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/linearColumnhome"
+        android:icon="@drawable/community"
+        android:title="Community"
+        />
+
+
+    <item
+        android:id="@+id/linearColumnWallet"
+        android:icon="@drawable/store"
+        android:title="Store"/>
+
+    <item
+        android:id="@+id/linearColumnhome1"
+        android:icon="@drawable/hooomeeee"
+    android:title="Home"
+    android:actionLayout="@layout/menu_item_layout"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/linearColumnLive"
+        android:icon="@drawable/connect"
+        android:title="Connect"/>
+    <item
+        android:id="@+id/linearColumnProfile"
+        android:icon="@drawable/knowledge"
+        android:title="Knowledge"/>
+
+
+</menu>

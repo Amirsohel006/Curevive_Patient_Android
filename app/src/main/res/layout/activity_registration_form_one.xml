@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
     <data>
-        <variable name="registrationFormOneVM" type="com.amirsohelsapplication.app.modules.registrationformone.data.viewmodel.RegistrationFormOneVM"/>
+        <variable name="registrationFormOneVM" type="com.curevivepatient.app.modules.registrationformone.data.viewmodel.RegistrationFormOneVM"/>
     </data>
 
 
@@ -153,6 +153,7 @@
                     android:textStyle="normal"
                     tools:text="@string/lbl_name"/>
             </com.google.android.material.textfield.TextInputLayout>
+
             <com.google.android.material.textfield.TextInputLayout
                 android:hint="@string/lbl_mobile"
                 android:id="@+id/textInputLayMobilevalue"
@@ -164,7 +165,9 @@
                 android:paddingEnd="@dimen/_28pxh"
                 android:paddingStart="@dimen/_28pxh"
                 android:paddingTop="@dimen/_22pxv"
-                android:textColorHint="@color/gray_700" style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+                android:textColorHint="@color/gray_700"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
                 <com.google.android.material.textfield.TextInputEditText
                     android:ellipsize="end"
                     android:fontFamily="@font/jost"
@@ -173,13 +176,15 @@
                     android:layout_height="wrap_content"
                     android:layout_width="match_parent"
                     android:singleLine="true"
-                    android:textColor="@color/gray_800_01"
+                    android:textColor="@color/gray_500"
                     android:textFontWeight="400"
+                    android:text="@string/lbl_988080_8"
                     android:textSize="@dimen/_20pxh"
                     android:textStyle="normal"
                     tools:text="@string/lbl_988080_8"/>
 
             </com.google.android.material.textfield.TextInputLayout>
+
             <com.google.android.material.textfield.TextInputLayout
                 android:hint="@string/lbl_email"
                 android:id="@+id/textInputLayEmail"
@@ -191,7 +196,9 @@
                 android:paddingEnd="@dimen/_28pxh"
                 android:paddingStart="@dimen/_28pxh"
                 android:paddingTop="@dimen/_13pxv"
-                android:textColorHint="@color/gray_700" style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+                android:textColorHint="@color/gray_700"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
                 <com.google.android.material.textfield.TextInputEditText
                     android:ellipsize="end"
                     android:fontFamily="@font/jost"
@@ -205,7 +212,9 @@
                     android:textSize="@dimen/_20pxh"
                     android:textStyle="normal"
                     tools:text="@string/lbl_yourgmail_com"/>
+
             </com.google.android.material.textfield.TextInputLayout>
+
             <androidx.appcompat.widget.AppCompatButton
                 android:ellipsize="end" android:gravity="center"
                 android:id="@+id/btnNext"
@@ -223,9 +232,13 @@
                 android:textAllCaps="false"
                 style="@style/btnSolidRounded"
                 tools:text="@string/lbl_next"/>
+
                 </LinearLayout>
+
             </ScrollView>
+
         </LinearLayout>
+
     </FrameLayout>
 
 
