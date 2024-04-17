@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.amirsohelsapplication.app">
+    package="com.curevivepatient.app">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
@@ -8,18 +8,23 @@
     <application
         android:name=".appcomponents.di.MyApp"
         android:allowBackup="false"
+        android:dataExtractionRules="@xml/data_extraction_rules"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:largeHeap="true"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApp"
-        android:usesCleartextTraffic="true"
-        android:dataExtractionRules="@xml/data_extraction_rules">
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".modules.homeactivity.HomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".modules.homecontainer.HomeContainerActivity"
+            android:exported="false" />
         <activity
             android:name=".modules.welcomeregistrationscreen.RegisterOTP"
             android:exported="false" />
-
         <activity
             android:name=".modules.welcomeregistrationscreen.WelComeRegistrationActivity"
             android:exported="false" />
@@ -36,17 +41,15 @@
         <activity
             android:name=".modules.loginotp.ui.LoginOtpActivity"
             android:screenOrientation="portrait" />
-
-        <activity android:name=".modules.registationform1.ui.RegistrationFormOneActivity"
-            android:screenOrientation="portrait"/>
-
-
-        <activity android:name=".modules.registrationfrom2.ui.RegistrationFormTwoActivity"
+        <activity
+            android:name=".modules.registationform1.ui.RegistrationFormOneActivity"
             android:screenOrientation="portrait" />
-
-
-        <activity android:name=".modules.registrationform3.ui.RegistrationFormThreeActivity"
-            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".modules.registrationfrom2.ui.RegistrationFormTwoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".modules.registrationform3.ui.RegistrationFormThreeActivity"
+            android:screenOrientation="portrait" />
     </application>
 
 </manifest>

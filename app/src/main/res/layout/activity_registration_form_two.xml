@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
     <data>
-        <variable name="registrationFormTwoVM" type="com.amirsohelsapplication.app.modules.registrationfrom2.data.viewmodel.RegistrationFormTwoVM"/>
+        <variable name="registrationFormTwoVM" type="com.curevivepatient.app.modules.registrationfrom2.data.viewmodel.RegistrationFormTwoVM"/>
     </data>
     <FrameLayout android:id="@+id/frameRegistrationForm"
         android:layout_height="match_parent"
@@ -12,7 +12,8 @@
             android:layout_width="match_parent"
             android:scaleType="fitXY"
             imageRes="@{@drawable/img_rectangle_800x360}"
-            tools:ignore="ContentDescription" tools:src="@drawable/img_rectangle_800x360"/>
+            tools:ignore="ContentDescription"
+            tools:src="@drawable/img_rectangle_800x360"/>
         <LinearLayout android:id="@+id/linearColumnaboutyou"
             android:layout_gravity="center"
             android:layout_height="wrap_content"

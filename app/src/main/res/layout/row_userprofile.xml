@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="userprofileRowModel" type="com.curevivepatient.app.modules.homeactivity.data.model.UserprofileRowModel"/>
+    </data>
+    <LinearLayout android:id="@+id/linearUserprofile"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/_11pxv"
+        android:paddingEnd="@dimen/_20pxh"
+        android:paddingStart="@dimen/_20pxh"
+        android:paddingTop="@dimen/_11pxv"
+        style="@style/groupStylewhite_A700_82cornerRadius">
+        <ImageView
+            android:id="@+id/imageUserImage"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="@dimen/_116pxh"
+            android:layout_width="@dimen/_111pxh"
+            android:scaleType="fitXY" cornerRadius="@{@dimen/_10pxh}"
+            imageRes="@{@drawable/img_photo}"
+            tools:ignore="ContentDescription"
+            tools:src="@drawable/img_photo"/>
+        <TextView android:gravity="center_horizontal"
+            android:id="@+id/txtTitle"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_6pxv"
+            android:layout_width="match_parent"
+            android:letterSpacing="0.01"
+            android:text="@string/msg_5_asanas_to_build"
+            style="@style/txtDMSerifDisplayregular12"
+            tools:text="@string/msg_5_asanas_to_build"/>
+        <LinearLayout android:gravity="center_vertical"
+            android:id="@+id/linearRowdate"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_7pxv"
+            android:layout_width="wrap_content" android:orientation="horizontal">
+            <TextView android:gravity="center_vertical"
+                android:id="@+id/txtDate"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:letterSpacing="0.0"
+                android:text="@string/msg_26_december_2022"
+                style="@style/txtJostregular8"
+                tools:text="@string/msg_26_december_2022"/>
+            <FrameLayout android:id="@+id/frameStack"
+                android:layout_gravity="center_vertical"
+                android:layout_height="@dimen/_12pxv"
+                android:layout_marginStart="@dimen/_29pxh"
+                android:layout_width="@dimen/_12pxh"
+                android:paddingBottom="@dimen/_4pxv"
+                android:paddingEnd="@dimen/_5pxh"
+                android:paddingStart="@dimen/_5pxh"
+                android:paddingTop="@dimen/_4pxv" style="@style/groupStylegray_300_01cornerRadius">
+                <ImageView android:id="@+id/imageImage"
+                    android:layout_gravity="center"
+                    android:layout_height="@dimen/_4pxh"
+                    android:layout_width="@dimen/_1pxh"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_vector_blue_gray_900_01"
+                    tools:ignore="ContentDescription"
+                    tools:src="@drawable/img_vector_blue_gray_900_01"/>
+            </FrameLayout>
+        </LinearLayout>
+    </LinearLayout>
+</layout>
