@@ -251,7 +251,8 @@
                                 tools:text="@string/lbl_schedule"/>
 
 
-                            <HorizontalScrollView
+                            <androidx.viewpager.widget.ViewPager
+                                android:id="@+id/viewpager"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content">
 
@@ -326,7 +327,8 @@
                                     android:scaleType="fitXY"
                                     cornerRadius="@{@dimen/_30pxh}"
                                     imageRes="@{@drawable/img_rectangle_6593}"
-                                    tools:ignore="ContentDescription" tools:src="@drawable/img_rectangle_6593"/>
+                                    tools:ignore="ContentDescription"
+                                    tools:src="@drawable/img_rectangle_6593"/>
                                 <ImageView android:id="@+id/imageImageFive"
                                     android:layout_gravity="center_vertical"
                                     android:layout_height="@dimen/_262pxh"
@@ -338,7 +340,7 @@
                                     tools:ignore="ContentDescription" tools:src="@drawable/img_rectangle_6593"/>
                             </LinearLayout>
 
-                            </HorizontalScrollView>
+                            </androidx.viewpager.widget.ViewPager>
 
 
                         </LinearLayout>

@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.activity.viewModels
 import androidx.fragment.app.viewModels
+import androidx.viewpager.widget.ViewPager
 import com.curevivepatient.app.R
 import com.curevivepatient.app.appcomponents.base.BaseFragment
 import com.curevivepatient.app.databinding.FragmentHomeBinding
@@ -68,6 +69,17 @@ class HomeFragment : BaseFragment<FragmentHomeBinding>(R.layout.fragment_home) {
         viewModel.userprofileList.observe(this) {
             userprofileAdapter.updateData(it)
         }
+
+
+
+        val viewPager: ViewPager = binding.viewpager
+        val adapter = ImagePagerAdapter()
+        viewPager.adapter = adapter
+
+
+        viewPager.setPageTransformer(true, DepthPageTransformer())
+
+
         binding.homeVM = viewModel
     }
 
