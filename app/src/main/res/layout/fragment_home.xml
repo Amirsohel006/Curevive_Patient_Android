@@ -256,89 +256,89 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content">
 
-                            <LinearLayout
-                                android:id="@+id/linearRowvectorNine"
-                                android:layout_height="wrap_content"
-                                android:layout_width="match_parent"
-                                android:layout_marginStart="20dp"
-                                android:orientation="horizontal">
+<!--                            <LinearLayout-->
+<!--                                android:id="@+id/linearRowvectorNine"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:layout_width="match_parent"-->
+<!--                                android:layout_marginStart="20dp"-->
+<!--                                android:orientation="horizontal">-->
 
-                                <FrameLayout
-                                    android:id="@+id/frameStackvector2"
-                                    android:layout_gravity="center_vertical"
-                                    android:layout_height="@dimen/_261pxv"
-                                    android:layout_width="@dimen/_265pxh">
+<!--                                <FrameLayout-->
+<!--                                    android:id="@+id/frameStackvector2"-->
+<!--                                    android:layout_gravity="center_vertical"-->
+<!--                                    android:layout_height="@dimen/_261pxv"-->
+<!--                                    android:layout_width="@dimen/_265pxh">-->
 
-                                    <ImageView
-                                        android:id="@+id/imageImageTwo"
-                                        android:layout_gravity="center"
-                                        android:layout_height="@dimen/_280pxh"
-                                        android:layout_width="310dp"
-                                        android:scaleType="fitXY"
-                                        cornerRadius="@{@dimen/_30pxh}"
-                                        imageRes="@{@drawable/image_rect}"
-                                        tools:ignore="ContentDescription"
-                                        tools:src="@drawable/image_rect"/>
+<!--                                    <ImageView-->
+<!--                                        android:id="@+id/imageImageTwo"-->
+<!--                                        android:layout_gravity="center"-->
+<!--                                        android:layout_height="@dimen/_280pxh"-->
+<!--                                        android:layout_width="310dp"-->
+<!--                                        android:scaleType="fitXY"-->
+<!--                                        cornerRadius="@{@dimen/_30pxh}"-->
+<!--                                        imageRes="@{@drawable/image_rect}"-->
+<!--                                        tools:ignore="ContentDescription"-->
+<!--                                        tools:src="@drawable/image_rect"/>-->
 
 
-                                    <ImageView
-                                        android:id="@+id/imageVectorNine"
-                                        android:layout_gravity="start"
-                                        android:layout_height="@dimen/_210pxh"
-                                        android:layout_marginStart="@dimen/_15pxh"
-                                        android:layout_width="@dimen/_223pxh"
-                                        android:scaleType="fitXY"
-                                        imageRes="@{@drawable/image_vector_210}"
-                                        tools:ignore="ContentDescription"
-                                        tools:src="@drawable/image_vector_210"/>
+<!--                                    <ImageView-->
+<!--                                        android:id="@+id/imageVectorNine"-->
+<!--                                        android:layout_gravity="start"-->
+<!--                                        android:layout_height="@dimen/_210pxh"-->
+<!--                                        android:layout_marginStart="@dimen/_15pxh"-->
+<!--                                        android:layout_width="@dimen/_223pxh"-->
+<!--                                        android:scaleType="fitXY"-->
+<!--                                        imageRes="@{@drawable/image_vector_210}"-->
+<!--                                        tools:ignore="ContentDescription"-->
+<!--                                        tools:src="@drawable/image_vector_210"/>-->
 
-                                </FrameLayout>
+<!--                                </FrameLayout>-->
 
-                                <FrameLayout
-                                    android:id="@+id/frameStackvector3"
-                                    android:layout_gravity="center_vertical"
-                                    android:layout_height="@dimen/_262pxv"
-                                    android:layout_marginStart="@dimen/_25pxh"
-                                    android:layout_width="@dimen/_271pxh">
+<!--                                <FrameLayout-->
+<!--                                    android:id="@+id/frameStackvector3"-->
+<!--                                    android:layout_gravity="center_vertical"-->
+<!--                                    android:layout_height="@dimen/_262pxv"-->
+<!--                                    android:layout_marginStart="@dimen/_25pxh"-->
+<!--                                    android:layout_width="@dimen/_271pxh">-->
 
-                                    <ImageView android:id="@+id/imageImageThree"
-                                        android:layout_gravity="center"
-                                        android:layout_height="@dimen/_262pxh"
-                                        android:layout_width="@dimen/_268pxh"
-                                        android:scaleType="fitXY"
-                                        cornerRadius="@{@dimen/_30pxh}"
-                                        imageRes="@{@drawable/img_rectangle_6593}"
-                                        tools:ignore="ContentDescription"
-                                        tools:src="@drawable/img_rectangle_6593"/>
-                                    <ImageView
-                                        android:id="@+id/imageVectorEleven"
-                                        android:layout_gravity="start"
-                                        android:layout_height="@dimen/_210pxh"
-                                        android:layout_width="@dimen/_213pxh"
-                                        android:scaleType="fitXY"
-                                        imageRes="@{@drawable/img_vector_210x213}"
-                                        tools:ignore="ContentDescription" tools:src="@drawable/img_vector_210x213"/>
-                                </FrameLayout>
-                                <ImageView android:id="@+id/imageImageFour"
-                                    android:layout_gravity="center_vertical"
-                                    android:layout_height="@dimen/_262pxh"
-                                    android:layout_marginStart="@dimen/_6pxh"
-                                    android:layout_width="@dimen/_268pxh"
-                                    android:scaleType="fitXY"
-                                    cornerRadius="@{@dimen/_30pxh}"
-                                    imageRes="@{@drawable/img_rectangle_6593}"
-                                    tools:ignore="ContentDescription"
-                                    tools:src="@drawable/img_rectangle_6593"/>
-                                <ImageView android:id="@+id/imageImageFive"
-                                    android:layout_gravity="center_vertical"
-                                    android:layout_height="@dimen/_262pxh"
-                                    android:layout_marginStart="@dimen/_6pxh"
-                                    android:layout_width="@dimen/_268pxh"
-                                    android:scaleType="fitXY"
-                                    cornerRadius="@{@dimen/_30pxh}"
-                                    imageRes="@{@drawable/img_rectangle_6593}"
-                                    tools:ignore="ContentDescription" tools:src="@drawable/img_rectangle_6593"/>
-                            </LinearLayout>
+<!--                                    <ImageView android:id="@+id/imageImageThree"-->
+<!--                                        android:layout_gravity="center"-->
+<!--                                        android:layout_height="@dimen/_262pxh"-->
+<!--                                        android:layout_width="@dimen/_268pxh"-->
+<!--                                        android:scaleType="fitXY"-->
+<!--                                        cornerRadius="@{@dimen/_30pxh}"-->
+<!--                                        imageRes="@{@drawable/img_rectangle_6593}"-->
+<!--                                        tools:ignore="ContentDescription"-->
+<!--                                        tools:src="@drawable/img_rectangle_6593"/>-->
+<!--                                    <ImageView-->
+<!--                                        android:id="@+id/imageVectorEleven"-->
+<!--                                        android:layout_gravity="start"-->
+<!--                                        android:layout_height="@dimen/_210pxh"-->
+<!--                                        android:layout_width="@dimen/_213pxh"-->
+<!--                                        android:scaleType="fitXY"-->
+<!--                                        imageRes="@{@drawable/img_vector_210x213}"-->
+<!--                                        tools:ignore="ContentDescription" tools:src="@drawable/img_vector_210x213"/>-->
+<!--                                </FrameLayout>-->
+<!--                                <ImageView android:id="@+id/imageImageFour"-->
+<!--                                    android:layout_gravity="center_vertical"-->
+<!--                                    android:layout_height="@dimen/_262pxh"-->
+<!--                                    android:layout_marginStart="@dimen/_6pxh"-->
+<!--                                    android:layout_width="@dimen/_268pxh"-->
+<!--                                    android:scaleType="fitXY"-->
+<!--                                    cornerRadius="@{@dimen/_30pxh}"-->
+<!--                                    imageRes="@{@drawable/img_rectangle_6593}"-->
+<!--                                    tools:ignore="ContentDescription"-->
+<!--                                    tools:src="@drawable/img_rectangle_6593"/>-->
+<!--                                <ImageView android:id="@+id/imageImageFive"-->
+<!--                                    android:layout_gravity="center_vertical"-->
+<!--                                    android:layout_height="@dimen/_262pxh"-->
+<!--                                    android:layout_marginStart="@dimen/_6pxh"-->
+<!--                                    android:layout_width="@dimen/_268pxh"-->
+<!--                                    android:scaleType="fitXY"-->
+<!--                                    cornerRadius="@{@dimen/_30pxh}"-->
+<!--                                    imageRes="@{@drawable/img_rectangle_6593}"-->
+<!--                                    tools:ignore="ContentDescription" tools:src="@drawable/img_rectangle_6593"/>-->
+<!--                            </LinearLayout>-->
 
                             </androidx.viewpager.widget.ViewPager>
 
@@ -556,16 +556,20 @@
             android:background="@android:color/transparent"
             android:layout_marginEnd="@dimen/_12pxh"
             android:layout_marginStart="@dimen/_214pxh"
+            android:layout_marginBottom="10dp"
             android:layout_width="match_parent"
             android:orientation="vertical">
 
 
             <FrameLayout
                 android:layout_gravity="center"
+                android:layout_marginStart="25dp"
                 android:id="@+id/frameStackvector"
                 android:layout_height="@dimen/_31pxv"
                 android:layout_width="@dimen/_66pxh">
-                <ImageView android:id="@+id/imageVectorFive"
+
+                <ImageView
+                    android:id="@+id/imageVectorFive"
                     android:layout_gravity="center"
                     android:layout_height="@dimen/_31pxh"
                     android:layout_width="@dimen/_66pxh"
@@ -573,6 +577,7 @@
                     android:src="@drawable/img_vector_31x66"
                     tools:ignore="ContentDescription"
                     tools:src="@drawable/img_vector_31x66"/>
+
                 <ImageView
                     android:id="@+id/imageSettingsOne"
                     android:layout_gravity="center"
@@ -580,20 +585,25 @@
                     android:layout_width="@dimen/_44pxh"
                     android:scaleType="fitXY"
                     android:src="@drawable/img_settings"
-                    tools:ignore="ContentDescription" tools:src="@drawable/img_settings"/>
+                    tools:ignore="ContentDescription"
+                    tools:src="@drawable/img_settings"/>
+
             </FrameLayout>
 
 
-            <LinearLayout android:gravity="end"
+            <LinearLayout
+                android:gravity="end"
                 android:id="@+id/linearRowvectorSeven"
                 android:layout_height="wrap_content"
                 android:layout_width="match_parent"
                 android:orientation="horizontal">
+
                 <FrameLayout
                     android:id="@+id/frameStackvector1"
                     android:layout_gravity="center_vertical"
-                    android:layout_height="@dimen/_99pxv"
+                    android:layout_height="@dimen/_110pxv"
                     android:layout_width="@dimen/_38pxh">
+
                     <ImageView
                         android:id="@+id/imageVectorSeven"
                         android:layout_gravity="center"
@@ -603,6 +613,7 @@
                         android:src="@drawable/img_vector_31x66"
                         tools:ignore="ContentDescription"
                         tools:src="@drawable/img_vector_31x66"/>
+
                     <ImageView
                         android:id="@+id/imageSendOne"
                         android:layout_gravity="center"
@@ -618,18 +629,23 @@
                 <FrameLayout
                     android:id="@+id/frameStacksettings"
                     android:layout_gravity="bottom"
-                    android:layout_height="@dimen/_90pxv"
+                    android:layout_marginBottom="10dp"
+                    android:layout_height="@dimen/_100pxv"
                     android:layout_marginTop="@dimen/_7pxv"
                     android:layout_width="@dimen/_90pxh"
                     style="@style/groupStyle_1">
+
                     <ImageView
                         android:id="@+id/imageImageOne"
                         android:layout_gravity="center"
-                        android:layout_height="@dimen/_90pxh"
+                        android:layout_height="@dimen/_80pxh"
                         android:layout_width="@dimen/_90pxh"
                         android:scaleType="fitXY"
                         imageRes="@{@drawable/img_clip_path_group}"
-                        tools:ignore="ContentDescription" tools:src="@drawable/img_clip_path_group"/>
+                        tools:ignore="ContentDescription"
+                        tools:src="@drawable/img_clip_path_group"/>
+
+
                     <ImageView
                         android:id="@+id/imageSettingsThree"
                         android:layout_gravity="center"
