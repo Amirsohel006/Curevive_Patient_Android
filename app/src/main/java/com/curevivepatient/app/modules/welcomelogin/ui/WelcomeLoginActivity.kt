@@ -17,11 +17,6 @@ class WelcomeLoginActivity :
   override fun onInitialized(): Unit {
     viewModel.navArguments = intent.extras?.getBundle("bundle")
 
-//    Handler(Looper.getMainLooper()).postDelayed( {
-//      val destIntent = LoginOtpActivity.getIntent(this, null)
-//      startActivity(destIntent)
-//      finish()
-//      }, 3000)
     try {
       Glide.with(this)
         .load(com.curevivepatient.app.R.drawable.giforlogin)
@@ -34,7 +29,6 @@ class WelcomeLoginActivity :
     binding.btnArrowleftOne.setOnClickListener {
       val i=Intent(this,LoginOtpActivity::class.java)
       startActivity(i)
-
     }
 
 

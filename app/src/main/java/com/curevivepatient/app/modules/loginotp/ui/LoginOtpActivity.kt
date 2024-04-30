@@ -97,4 +97,6 @@ class LoginOtpActivity : BaseActivity<ActivityLoginOtpBinding>(R.layout.activity
         return destIntent
       }
     }
+
+
   }

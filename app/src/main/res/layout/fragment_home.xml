@@ -553,7 +553,6 @@
         <LinearLayout
             android:id="@+id/linearColumnvector"
             android:layout_height="wrap_content"
-            android:background="@android:color/transparent"
             android:layout_marginEnd="@dimen/_12pxh"
             android:layout_marginStart="@dimen/_214pxh"
             android:layout_marginBottom="10dp"

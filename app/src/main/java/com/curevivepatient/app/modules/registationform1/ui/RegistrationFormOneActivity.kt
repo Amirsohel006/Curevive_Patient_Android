@@ -14,12 +14,16 @@ class RegistrationFormOneActivity :
   private val viewModel: RegistrationFormOneVM by viewModels<RegistrationFormOneVM>()
 
   override fun onInitialized(): Unit {
+
     viewModel.navArguments = intent.extras?.getBundle("bundle")
+
     binding.btnNext.setOnClickListener {
       val i= Intent(this, RegistrationFormTwoActivity::class.java)
       startActivity(i)
     }
+
     binding.registrationFormOneVM = viewModel
+
   }
 
   override fun setUpClicks(): Unit {
