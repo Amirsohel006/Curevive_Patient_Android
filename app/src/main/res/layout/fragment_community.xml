@@ -4,14 +4,70 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     android:background="@drawable/communitybackground"
     tools:context=".modules.communityfragment.CommunityFragment">
 
    
     <LinearLayout
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="40dp">
 
+
+        <ImageView
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/image_rect"/>
+
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginStart="19dp"
+           android:layout_gravity="center"
+           android:text="Community"/>
+
+        <FrameLayout
+            android:layout_marginStart="190dp"
+            android:layout_width="32dp"
+            android:layout_height="32dp">
+
+            <ImageView
+                android:id="@+id/image"
+                android:src="@drawable/notification"
+                android:layout_gravity="end"
+                android:layout_width="28dp"
+                android:layout_height="28dp"/>
+        </FrameLayout>
+
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@drawable/background_for_com">
+
+
+        <TextView
+            android:text="Gastritis"
+            android:layout_gravity="center"
+            android:layout_marginStart="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+        <ImageView
+            android:src="@drawable/viewcommunity"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/_180pxh"
+            android:layout_width="wrap_content"
+            android:layout_height="38dp"/>
 
 
     </LinearLayout>
