@@ -3,12 +3,12 @@
     android:orientation="vertical"
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="500dp">
 
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="110dp"
+        android:layout_height="wrap_content"
         android:background="@drawable/rect">
 
         
@@ -17,10 +17,159 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp">
+
+                <!-- Circular ImageView -->
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="44dp"
+                    android:layout_height="44dp"
+                    android:background="@drawable/circular_background"/>
+
+                <!-- TextView for letters -->
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="A"
+                    android:textSize="20sp"
+                    android:textColor="#FFFFFF"
+                    android:layout_gravity="center"/>
+            </FrameLayout>
+
+
+
+            <LinearLayout
+                android:layout_marginTop="16dp"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    style="@style/radleyforcommunity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Vijaylakshami"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/rubikregular"
+                    android:text="Bangaluru"/>
+
+
+            </LinearLayout>
+
+
+            <ImageView
+
+                android:layout_marginTop="18dp"
+               android:layout_marginStart="200dp"
+                android:src="@drawable/threedotimage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
 
         </LinearLayout>
-
         
+        
+        
+        <ImageView
+            android:id="@+id/imageview"
+            android:layout_width="match_parent"
+            android:layout_height="259dp"
+            android:src="@drawable/image_rect"/>
+
+
+        <TextView
+            android:layout_marginTop="3dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/textjostregular"
+            android:text="Loren Ipsum Text"/>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <!-- First ImageView -->
+            <ImageView
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_marginStart="15dp"
+                android:src="@drawable/like_button"/>
+
+            <!-- Second ImageView -->
+            <ImageView
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_marginStart="15dp"
+                android:src="@drawable/message_button"/>
+
+            <!-- Third ImageView -->
+            <ImageView
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_marginStart="15dp"
+                android:src="@drawable/sharebutton"/>
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="5dp"
+            android:text="View all 5 comments"
+            android:layout_width="wrap_content"
+            style="@style/txtJostromanmedium141"
+            android:layout_height="wrap_content"/>
+
+
+        <LinearLayout
+            android:layout_marginStart="15dp"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="12dp">
+
+                <!-- Circular ImageView -->
+                <ImageView
+                    android:id="@+id/imageView1"
+                    android:layout_width="44dp"
+                    android:layout_height="44dp"
+                    android:background="@drawable/circular_background"/>
+
+                <!-- TextView for letters -->
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="A"
+                    android:textSize="20sp"
+                    android:textColor="#FFFFFF"
+                    android:layout_gravity="center"/>
+            </FrameLayout>
+
+
+            <TextView
+                android:text="Add a comment..."
+                android:layout_marginTop="26dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/txtJostromanmedium141"/>
+        </LinearLayout>
+
     </LinearLayout>
 
 </RelativeLayout>

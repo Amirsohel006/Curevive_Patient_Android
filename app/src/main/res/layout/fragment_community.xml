@@ -17,12 +17,29 @@
         android:layout_height="40dp">
 
 
-        <ImageView
-            android:layout_width="32dp"
-            android:layout_height="32dp"
-            android:src="@drawable/image_rect"/>
+        <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <!-- Larger ImageView sized 32x32 -->
+            <ImageView
+                android:layout_width="38dp"
+                android:layout_height="38dp"
+                android:src="@drawable/circular_background_image"
+                android:layout_gravity="center" />
+
+            <!-- Smaller ImageView sized 24x24, nested inside the larger ImageView -->
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/image"
+                android:background="@drawable/image"
+                android:layout_gravity="center" />
+
+        </FrameLayout>
 
        <TextView
+           style="@style/txtEpiloguemedium16"
            android:layout_width="wrap_content"
            android:layout_height="wrap_content"
            android:layout_marginStart="19dp"
@@ -30,7 +47,7 @@
            android:text="Community"/>
 
         <FrameLayout
-            android:layout_marginStart="190dp"
+            android:layout_marginStart="160dp"
             android:layout_width="32dp"
             android:layout_height="32dp">
 
@@ -55,6 +72,7 @@
 
 
         <TextView
+            style="@style/txtDMSerifDisplayregular21"
             android:text="Gastritis"
             android:layout_gravity="center"
             android:layout_marginStart="30dp"
@@ -65,9 +83,9 @@
         <ImageView
             android:src="@drawable/viewcommunity"
             android:layout_gravity="center"
-            android:layout_marginStart="@dimen/_180pxh"
+            android:layout_marginStart="@dimen/_150pxh"
             android:layout_width="wrap_content"
-            android:layout_height="38dp"/>
+            android:layout_height="48dp"/>
 
 
     </LinearLayout>

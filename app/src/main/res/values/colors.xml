@@ -42,4 +42,8 @@
   <color name="black_900_00">#00000000</color>
   <color name="white_A700_8e">#8effffff</color>
   <color name="lime_800">#c99319</color>
+  <color name="text_com">#3E3A3A</color>
+  <color name="text_com2">#747474</color>
+  <color name="text_com3">#8C8C8C</color>
+  <color name="text_greay">#4D5053</color>
 </resources>

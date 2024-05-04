@@ -70,6 +70,12 @@
         <item name="android:fontFamily">@font/dm_serif_display</item>
         <item name="android:textFontWeight" tools:targetApi="p">400</item>
     </style>
+    <style name="txtDMSerifDisplayregular21">
+        <item name="android:textSize">@dimen/_20pxh</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:fontFamily">@font/dm_serif_display</item>
+        <item name="android:textFontWeight" tools:targetApi="p">400</item>
+    </style>
     <style name="btn">
         <item name="android:textSize">@dimen/_12pxh</item>
         <item name="android:textColor">@color/gray_600</item>
@@ -245,5 +251,45 @@
         <item name="android:background">@drawable/rectangle_gradient_s_deep_orange_50_e_orange_50</item>
     </style>
 
+
+    <style name="radleyforcommunity">
+        <item name="android:textSize">@dimen/_16pxh</item>
+        <item name="android:textColor">@color/text_com</item>
+        <item name="android:fontFamily">@font/radleyregular</item>
+        <item name="android:textFontWeight" tools:targetApi="p">400</item>
+    </style>
+
+
+
+
+    <style name="rubikregular">
+        <item name="android:textSize">@dimen/_12pxh</item>
+        <item name="android:textColor">@color/text_com2</item>
+        <item name="android:fontFamily">@font/rubikregular</item>
+        <item name="android:textFontWeight" tools:targetApi="p">400</item>
+    </style>
+
+    <style name="textjostregular">
+        <item name="android:textSize">@dimen/_12pxh</item>
+        <item name="android:textColor">@color/blue_gray_900_01</item>
+        <item name="android:fontFamily">@font/jostregular</item>
+        <item name="android:textFontWeight" tools:targetApi="p">400</item>
+    </style>
+
+
+
+    <style name="txtJostromanmedium141">
+        <item name="android:textSize">@dimen/_14pxh</item>
+        <item name="android:textColor">@color/text_com3</item>
+        <item name="android:fontFamily">@font/jost</item>
+        <item name="android:textFontWeight" tools:targetApi="p">500</item>
+    </style>
+
+    <style name="txtEpiloguemedium16">
+        <item name="android:textSize">@dimen/_16pxh</item>
+        <item name="android:textColor">@color/text_greay</item>
+        <item name="android:fontFamily">@font/epilogue</item>
+        <item name="android:textFontWeight" tools:targetApi="p">500</item>
+    </style>
 
 </resources>
