@@ -5,7 +5,10 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.viewpager2.widget.ViewPager2
 import com.curevivepatient.app.R
+import com.google.android.material.tabs.TabLayout
+import com.google.android.material.tabs.TabLayoutMediator
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -35,7 +38,18 @@ class KnowledgeFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_knowledge, container, false)
+        return inflater.inflate(R.layout.fragment_knowledge, container, false).apply {
+            val tabLayout: TabLayout = findViewById(R.id.tabLayout)
+            val viewPager: ViewPager2 = findViewById(R.id.viewPager)
+
+            TabLayoutMediator(tabLayout, viewPager) { tab, position ->
+                when (position) {
+                    0 -> tab.text = "Blogs"
+                    1 -> tab.text = "Q&A's"
+                    2 -> tab.text = "Recipes"
+                }
+            }.attach()
+        }
     }
 
     companion object {

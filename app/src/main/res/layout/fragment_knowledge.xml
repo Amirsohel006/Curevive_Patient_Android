@@ -1,16 +1,99 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
     android:background="@drawable/communitybackground"
-    tools:context=".modules.knowledgefragment.KnowledgeFragment">
+    tools:context=".modules.communityfragment.CommunityFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+
+    <LinearLayout
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="40dp">
+
+
+        <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <!-- Larger ImageView sized 32x32 -->
+            <ImageView
+                android:layout_width="38dp"
+                android:layout_height="38dp"
+                android:src="@drawable/circular_background_image"
+                android:layout_gravity="center" />
+
+            <!-- Smaller ImageView sized 24x24, nested inside the larger ImageView -->
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/image"
+                android:background="@drawable/image"
+                android:layout_gravity="center" />
+
+        </FrameLayout>
+
+        <TextView
+            style="@style/txtEpiloguemedium16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="19dp"
+            android:layout_gravity="center"
+            android:text="Knowledge"/>
+
+        <FrameLayout
+            android:layout_marginStart="160dp"
+            android:layout_width="32dp"
+            android:layout_height="32dp">
+
+            <ImageView
+                android:id="@+id/image"
+                android:src="@drawable/notification"
+                android:layout_gravity="end"
+                android:layout_width="28dp"
+                android:layout_height="28dp"/>
+        </FrameLayout>
+
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_height="75dp">
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabLayout"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/tab_background"
+            app:tabSelectedTextColor="@color/white"
+            app:tabTextColor="@color/gray"
+            app:tabIndicator="@null"
+            app:tabIndicatorColor="@color/black"
+            app:tabIndicatorHeight="0dp"
+            app:tabBackground="@drawable/tab_background"/>
+
+
+    </LinearLayout>
+
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
 
 </LinearLayout>

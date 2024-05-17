@@ -17,6 +17,9 @@
         android:theme="@style/Theme.MyApp"
         android:usesCleartextTraffic="true">
         <activity
+            android:name=".modules.blogdescription.BlogDescriptionActivity"
+            android:exported="false" />
+        <activity
             android:name=".modules.studio.StudioContainer"
             android:exported="false" />
         <activity

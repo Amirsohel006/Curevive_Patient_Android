@@ -27,10 +27,12 @@ class RegistrationFormOneActivity :
   }
 
   override fun setUpClicks(): Unit {
+
   }
 
   companion object {
     const val TAG: String = "REGISTRATION_FORM_ONE_ACTIVITY"
 
   }
+
 }
