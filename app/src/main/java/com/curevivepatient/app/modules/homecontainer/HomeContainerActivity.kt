@@ -8,6 +8,7 @@ import com.curevivepatient.app.appcomponents.base.BaseActivity
 import com.curevivepatient.app.databinding.ActivityHomeContainerBinding
 import com.curevivepatient.app.modules.homeactivity.data.HomeFragment
 import com.curevivepatient.app.modules.homecontainer.data.viewmodel.HomeContainerVM
+import com.curevivepatient.app.modules.knowledgefragment.KnowledgeFragment
 
 class HomeContainerActivity :
     BaseActivity<ActivityHomeContainerBinding>(R.layout.activity_home_container) {
@@ -47,6 +48,9 @@ class HomeContainerActivity :
 //                R.id.linearColumnLive-> replaceFragment(FinancialOverviewFragment())
 //
 //                R.id.linearColumnProfile -> replaceFragment(ActivitiesFragment())
+
+
+                R.id.linearColumnProfile  -> replaceFragment(KnowledgeFragment())
 
                 else -> {
                 }
