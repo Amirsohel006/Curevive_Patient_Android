@@ -5,10 +5,10 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.viewpager2.widget.ViewPager2
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.LinearSnapHelper
+import androidx.recyclerview.widget.RecyclerView
 import com.curevivepatient.app.R
-import com.google.android.material.tabs.TabLayout
-import com.google.android.material.tabs.TabLayoutMediator
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -17,10 +17,10 @@ private const val ARG_PARAM2 = "param2"
 
 /**
  * A simple [Fragment] subclass.
- * Use the [KnowledgeFragment.newInstance] factory method to
+ * Use the [QAFragment.newInstance] factory method to
  * create an instance of this fragment.
  */
-class KnowledgeFragment : Fragment() {
+class QAFragment : Fragment() {
     // TODO: Rename and change types of parameters
     private var param1: String? = null
     private var param2: String? = null
@@ -38,16 +38,14 @@ class KnowledgeFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_knowledge, container, false).apply {
-            val tabLayout: TabLayout = findViewById(R.id.tabLayout)
-            val viewPager: ViewPager2 = findViewById(R.id.viewPager)
+        return inflater.inflate(R.layout.fragment_q_a, container, false).apply {
+            val recyclerView: RecyclerView = findViewById(R.id.recyclerview)
+            recyclerView.layoutManager = LinearLayoutManager(requireActivity(), LinearLayoutManager.VERTICAL, false)
+            recyclerView.adapter = QAdapter()
 
-            val adapter = KNowledgeFragmentAdapter(childFragmentManager,lifecycle)
-            viewPager.adapter = adapter
-
-            TabLayoutMediator(tabLayout,viewPager) { tab, position ->
-                tab.text = KNowledgeFragmentAdapter.title[position]
-            }.attach()
+            // Attach LinearSnapHelper
+            val snapHelper = LinearSnapHelper()
+            snapHelper.attachToRecyclerView(recyclerView)
         }
     }
 
@@ -58,12 +56,12 @@ class KnowledgeFragment : Fragment() {
          *
          * @param param1 Parameter 1.
          * @param param2 Parameter 2.
-         * @return A new instance of fragment KnowledgeFragment.
+         * @return A new instance of fragment QAFragment.
          */
         // TODO: Rename and change types and number of parameters
         @JvmStatic
         fun newInstance(param1: String, param2: String) =
-            KnowledgeFragment().apply {
+            QAFragment().apply {
                 arguments = Bundle().apply {
                     putString(ARG_PARAM1, param1)
                     putString(ARG_PARAM2, param2)

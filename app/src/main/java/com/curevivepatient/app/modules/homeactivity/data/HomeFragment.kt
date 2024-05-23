@@ -1,5 +1,7 @@
 package com.curevivepatient.app.modules.homeactivity.data
 
+import CardAdapter
+import CardRotationItemDecoration
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -7,6 +9,9 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.activity.viewModels
 import androidx.fragment.app.viewModels
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.LinearSnapHelper
+import androidx.recyclerview.widget.RecyclerView
 import androidx.viewpager.widget.ViewPager
 import com.curevivepatient.app.R
 import com.curevivepatient.app.appcomponents.base.BaseFragment
@@ -70,14 +75,18 @@ class HomeFragment : BaseFragment<FragmentHomeBinding>(R.layout.fragment_home) {
             userprofileAdapter.updateData(it)
         }
 
+        val items = listOf("Aroma Therapy", "Yoga", "Meditation", "Spa", "Therapy Session")
+
+        val recyclerView: RecyclerView = binding.recyclerview
+        recyclerView.layoutManager = LinearLayoutManager(requireActivity(), LinearLayoutManager.HORIZONTAL, false)
+        recyclerView.adapter = CardAdapter(items)
+        recyclerView.addItemDecoration(CardRotationItemDecoration())
+
+        // Attach LinearSnapHelper
+        val snapHelper = LinearSnapHelper()
+        snapHelper.attachToRecyclerView(recyclerView)
 
 
-        val viewPager: ViewPager = binding.viewpager
-        val adapter = ImagePagerAdapter()
-        viewPager.adapter = adapter
-
-
-        viewPager.setPageTransformer(true, DepthPageTransformer())
 
 
         binding.homeVM = viewModel

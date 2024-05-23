@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".modules.knowledgefragment.RecipiesFragment">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:gravity="start"
+            android:text="Breakfast"
+            android:textStyle="bold"
+            android:textSize="16dp"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+
+        <TextView
+            android:layout_gravity="end"
+            android:text="Viewall"
+            android:gravity="end"
+            android:layout_width="wrap_content"
+            android:layout_marginStart="200dp"
+            android:textColor="@color/black"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycerbreakfast"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:gravity="start"
+            android:text="Lunch"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+
+        <TextView
+            android:layout_gravity="end"
+            android:text="Viewall"
+            android:gravity="end"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_marginStart="200dp"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycerbreaklunch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:gravity="start"
+            android:text="Dinner"
+            android:textStyle="bold"
+            android:textSize="16dp"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+        <TextView
+            android:layout_gravity="end"
+            android:text="Viewall"
+            android:gravity="end"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_marginStart="200dp"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycerbreakdinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:gravity="start"
+            android:text="Snacks"
+            android:textStyle="bold"
+            android:textSize="16dp"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+
+        <TextView
+            android:layout_gravity="end"
+            android:text="Viewall"
+            android:gravity="end"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_marginStart="200dp"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycersnack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+    </ScrollView>
+</LinearLayout>

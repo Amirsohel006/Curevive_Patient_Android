@@ -26,8 +26,7 @@
         android:background="?attr/selectableItemBackgroundBorderless"
         android:src="@drawable/arrow_forward"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintMargin="16dp" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <!-- Text Container -->
     <LinearLayout

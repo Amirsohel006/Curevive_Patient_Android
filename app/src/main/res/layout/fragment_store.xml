@@ -3,13 +3,156 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
     android:background="@drawable/communitybackground"
     tools:context=".modules.storefragment.StoreFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+
+    <LinearLayout
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="40dp">
+
+
+        <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <!-- Larger ImageView sized 32x32 -->
+            <ImageView
+                android:layout_width="38dp"
+                android:layout_height="38dp"
+                android:src="@drawable/circular_background_image"
+                android:layout_gravity="center" />
+
+            <!-- Smaller ImageView sized 24x24, nested inside the larger ImageView -->
+            <ImageView
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@drawable/image"
+                android:background="@drawable/image"
+                android:layout_gravity="center" />
+
+        </FrameLayout>
+
+        <TextView
+            style="@style/txtEpiloguemedium16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="19dp"
+            android:layout_gravity="center"
+            android:text="Store"/>
+
+    </LinearLayout>
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Testimonals"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        />
+
+    <FrameLayout
+        android:id="@+id/frameStackrectangleeleven"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_14pxv"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_width="wrap_content">
+        <com.asksira.loopingviewpager.LoopingViewPager
+            android:id="@+id/imageSliderSliderrectangleeleven"
+            android:layout_gravity="start"
+            android:layout_height="@dimen/_171pxv"
+            android:layout_width="match_parent"
+            app:autoScroll="true"
+            app:isInfinite="true" app:scrollInterval="5000"/>
+
+        <com.asksira.loopingviewpager.indicator.CustomShapePagerIndicator
+            android:id="@+id/indicatorVolume"
+            android:layout_gravity="bottom|center"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_10pxv"
+            android:layout_marginEnd="@dimen/_126pxh"
+            android:layout_marginStart="@dimen/_126pxh"
+            android:layout_marginTop="@dimen/_10pxv"
+            android:layout_width="wrap_content"
+            app:drawable_normal="@drawable/indicator_unselected_bg_gray_500_70_radius_8"
+            app:drawable_selected="@drawable/indicator_selected_bg_bluegray_100_radius_8"
+            app:indicator_size="@dimen/_8pxh"
+            app:indicator_spacing="@dimen/_9pxh"/>
+    </FrameLayout>
+
+
+    <ImageView
+        android:layout_marginTop="15dp"
+        android:id="@+id/book_consult"
+        android:src="@drawable/book_consultation_image"
+        android:layout_width="match_parent"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_height="75dp"/>
+
+
+
+    <TextView
+        android:id="@+id/deseieses"
+        android:text="Diseases"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview_for_deseises"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+
+            android:text="Products"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+        <TextView
+            android:text="viewall"
+            android:gravity="end"
+            android:layout_marginStart="240dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+    </LinearLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+        app:spanCount="6"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+
 
 </LinearLayout>

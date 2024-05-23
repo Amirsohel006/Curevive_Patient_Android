@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <resources>
-    <string name="app_name">Built Cart</string>
+    <string name="app_name">Curevive Patient</string>
     <string name="loading">Loading…</string>
     <string name="no_internet_connection">No internet connection!</string>
     <string name="msg_otp_will_be_sent">OTP will be sent to this mobile number to verify</string>
@@ -122,4 +122,7 @@ the earth, bot from lab.</string>
     <string name="msg_5_asanas_to_build">5 Asanas to build a strong body.</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="lbl_articles">Blogs</string>
+    <string name="lbl_training_videos">QA\'s</string>
+    <string name="lbl_testimonals">Recipies</string>
 </resources>
