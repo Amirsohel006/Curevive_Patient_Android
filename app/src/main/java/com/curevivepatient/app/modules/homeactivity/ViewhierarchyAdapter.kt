@@ -22,8 +22,6 @@ class ViewhierarchyAdapter(
 
   override fun onBindViewHolder(holder: RowViewhierarchyVH, position: Int) {
     val viewhierarchyRowModel = ViewhierarchyRowModel()
-    // TODO uncomment following line after integration with data source
-    // val viewhierarchyRowModel = list[position]
     holder.binding.viewhierarchyRowModel = viewhierarchyRowModel
   }
 
@@ -54,4 +52,6 @@ class ViewhierarchyAdapter(
   ) : RecyclerView.ViewHolder(view) {
     val binding: RowViewhierarchyBinding = RowViewhierarchyBinding.bind(itemView)
   }
+
+
 }

@@ -4,8 +4,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_margin="16dp"
-    app:cardCornerRadius="16dp"
+
     app:cardElevation="4dp"
     app:cardBackgroundColor="@android:color/white">
 
@@ -36,9 +35,7 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toEndOf="@id/imageView"
-            app:layout_constraintEnd_toStartOf="@id/arrowButton"
-            app:layout_constraintMarginStart="16dp"
-            app:layout_constraintMarginEnd="8dp">
+            app:layout_constraintEnd_toStartOf="@id/arrowButton">
 
             <TextView
                 android:id="@+id/titleTextView"
