@@ -125,4 +125,8 @@ the earth, bot from lab.</string>
     <string name="lbl_articles">Blogs</string>
     <string name="lbl_training_videos">QA\'s</string>
     <string name="lbl_testimonals">Recipies</string>
+    <string name="treatments">Treatments</string>
+    <string name="addons">Add-ons</string>
+    <string name="journywithus">JourneyWithUs</string>
+    <string name="researches">Researchs</string>
 </resources>
