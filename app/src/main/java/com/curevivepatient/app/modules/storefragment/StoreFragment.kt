@@ -1,11 +1,14 @@
 package com.curevivepatient.app.modules.storefragment
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.TextView
 import com.curevivepatient.app.R
+import com.curevivepatient.app.modules.desiesetreatment.DeseiseTreatment
 
 private const val ARG_PARAM1 = "param1"
 private const val ARG_PARAM2 = "param2"
@@ -28,7 +31,13 @@ class StoreFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_store, container, false)
+        return inflater.inflate(R.layout.fragment_store, container, false).apply {
+            val txtWorkshops=findViewById<TextView>(R.id.txtWorkshops)
+            txtWorkshops.setOnClickListener {
+                val i=Intent(requireActivity(),DeseiseTreatment::class.java)
+                startActivity(i)
+            }
+        }
     }
 
     companion object {

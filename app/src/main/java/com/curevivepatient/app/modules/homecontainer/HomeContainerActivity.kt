@@ -9,9 +9,11 @@ import androidx.fragment.app.FragmentManager
 import com.curevivepatient.app.R
 import com.curevivepatient.app.appcomponents.base.BaseActivity
 import com.curevivepatient.app.databinding.ActivityHomeContainerBinding
+import com.curevivepatient.app.modules.communityfragment.CommunityFragment
 import com.curevivepatient.app.modules.homeactivity.data.HomeFragment
 import com.curevivepatient.app.modules.homecontainer.data.viewmodel.HomeContainerVM
 import com.curevivepatient.app.modules.knowledgefragment.KnowledgeFragment
+import com.curevivepatient.app.modules.storefragment.StoreFragment
 
 class HomeContainerActivity :
     BaseActivity<ActivityHomeContainerBinding>(R.layout.activity_home_container) {
@@ -30,11 +32,16 @@ class HomeContainerActivity :
         binding.frameBottombar.setOnItemSelectedListener {
 
             when(it.itemId ){
+
+                R.id.linearColumnhome ->{
+                    replaceFragment(CommunityFragment())
+                }
+
                 R.id.linearColumnhome1 -> {
                     replaceFragment(HomeFragment())
                 }
 
-//                R.id.linearColumnWallet -> replaceFragment(SearchFragment())
+                R.id.linearColumnWallet -> replaceFragment(StoreFragment())
 //
 //
 //                R.id.linearColumnLive-> replaceFragment(FinancialOverviewFragment())

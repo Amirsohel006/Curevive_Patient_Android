@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".modules.desiesetreatment.DeseiseTreatment">
+
+
+
+
+
+    <FrameLayout
+        android:id="@+id/framelayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <VideoView
+        android:id="@+id/videoview"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"/>
+
+        <ImageView
+            android:id="@+id/backImage"
+            android:src="@drawable/arrow_forward"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/head"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Thyroid"
+        android:layout_below="@id/framelayout"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/headDescription"
+        android:layout_below="@id/head"
+        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"/>
+
+
+    <LinearLayout
+        android:layout_below="@id/headDescription"
+        android:layout_marginTop="10dp"
+        android:id="@+id/tabContainer"
+        android:layout_width="match_parent"
+        android:layout_height="55dp">
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabLayout"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/background_for_theroid"
+            app:tabSelectedTextColor="@color/white"
+            app:tabTextColor="@color/gray"
+            app:tabIndicator="@null"
+            app:tabIndicatorColor="@color/black"
+            app:tabIndicatorHeight="0dp"
+            app:tabBackground="@drawable/background_for_theroid"/>
+
+    </LinearLayout>
+
+
+
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:layout_below="@id/tabContainer"
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_height="match_parent" />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_below="@id/viewPager"
+        android:layout_width="match_parent"
+        android:text="View Plans"
+        android:textColor="@color/white_A700"
+        style="@style/btnbackground_for_all"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_height="60dp"/>
+
+
+    
+</RelativeLayout>

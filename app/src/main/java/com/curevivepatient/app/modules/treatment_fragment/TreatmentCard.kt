@@ -1,14 +1,16 @@
-package com.curevivepatient.app.modules.communityfragment
+package com.curevivepatient.app.modules.treatment_fragment
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.LinearSnapHelper
 import androidx.recyclerview.widget.RecyclerView
 import com.curevivepatient.app.R
+import com.curevivepatient.app.modules.knowledgefragment.BlogAdapter
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -17,10 +19,10 @@ private const val ARG_PARAM2 = "param2"
 
 /**
  * A simple [Fragment] subclass.
- * Use the [CommunityFragment.newInstance] factory method to
+ * Use the [TreatmentCard.newInstance] factory method to
  * create an instance of this fragment.
  */
-class CommunityFragment : Fragment() {
+class TreatmentCard : Fragment() {
     // TODO: Rename and change types of parameters
     private var param1: String? = null
     private var param2: String? = null
@@ -38,11 +40,10 @@ class CommunityFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_community, container, false).apply {
+        return inflater.inflate(R.layout.fragment_treatment_card, container, false).apply {
             val recyclerView: RecyclerView = findViewById(R.id.recyclerview)
-            recyclerView.layoutManager = LinearLayoutManager(requireActivity(), LinearLayoutManager.VERTICAL, false)
-            recyclerView.adapter = CommunityAdapter()
-
+            recyclerView.layoutManager = GridLayoutManager(requireActivity(), 2)
+            recyclerView.adapter = TreatmentCardAdapter()
 
             // Attach LinearSnapHelper
             val snapHelper = LinearSnapHelper()
@@ -57,12 +58,12 @@ class CommunityFragment : Fragment() {
          *
          * @param param1 Parameter 1.
          * @param param2 Parameter 2.
-         * @return A new instance of fragment CommunityFragment.
+         * @return A new instance of fragment TreatmentCard.
          */
         // TODO: Rename and change types and number of parameters
         @JvmStatic
         fun newInstance(param1: String, param2: String) =
-            CommunityFragment().apply {
+            TreatmentCard().apply {
                 arguments = Bundle().apply {
                     putString(ARG_PARAM1, param1)
                     putString(ARG_PARAM2, param2)

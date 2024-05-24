@@ -17,6 +17,9 @@
         android:theme="@style/Theme.MyApp"
         android:usesCleartextTraffic="true">
         <activity
+            android:name=".modules.desiesetreatment.DeseiseTreatment"
+            android:exported="false" />
+        <activity
             android:name=".modules.recipedetails.RecipeDetails"
             android:exported="false" />
         <activity

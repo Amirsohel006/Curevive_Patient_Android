@@ -17,7 +17,7 @@
 
     <item
         android:id="@+id/linearColumnhome1"
-        android:icon="@drawable/hooomeeee"
+        android:icon="@drawable/ic_leaf"
     android:title="Home"
     android:actionLayout="@layout/menu_item_layout"
         app:showAsAction="always" />
